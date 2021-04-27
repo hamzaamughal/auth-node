@@ -3,21 +3,21 @@ const mongoose = require('mongoose')
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
         min: 6,
-        max: 255
+        max: 255,
+        required: true
     },
     email: {
         type: String,
-        required: true,
         max: 255,
-        min: 6
+        min: 6,
+        required: true
     },
     password: {
         type: String,
-        required: true,
         max: 1205,
-        min: 6
+        min: 6,
+        required: true
     },
     date: {
         type: Date,
